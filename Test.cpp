@@ -38,11 +38,17 @@ TEST_CASE("Good snowman"){
 	CHECK(nospaces(snowman(43143212)) == nospaces(" ___\n (_*_) \n (._-)/\n/( : )\n (\" \") "));
 	CHECK(nospaces(snowman(44143212)) == nospaces(" ___\n (_*_) \n (. -)/\n/( : )\n (\" \") "));		
 	
-	//Left or Right Eye
+	//Left Eye
 	CHECK(nospaces(snowman(41113212)) == nospaces(" ___ \n (_*_) \n (.,.)/\n/( : ) \n (\" \") "));
-	CHECK(nospaces(snowman(41223212)) == nospaces(" ___ \n (_*_) \n (o,o)/\n/( : ) \n (\" \") "));
-	CHECK(nospaces(snowman(41333212)) == nospaces(" ___ \n (_*_) \n (O,O)/\n/( : ) \n (\" \") "));
-	CHECK(nospaces(snowman(41443212)) == nospaces(" ___ \n (_*_) \n (-,-)/\n/( : ) \n (\" \") "));
+	CHECK(nospaces(snowman(41213212)) == nospaces(" ___ \n (_*_) \n (o,.)/\n/( : ) \n (\" \") "));
+	CHECK(nospaces(snowman(41313212)) == nospaces(" ___ \n (_*_) \n (O,.)/\n/( : ) \n (\" \") "));
+	CHECK(nospaces(snowman(41413212)) == nospaces(" ___ \n (_*_) \n (-,.)/\n/( : ) \n (\" \") "));
+
+	//Right Eye
+	CHECK(nospaces(snowman(41113212)) == nospaces(" ___ \n (_*_) \n (.,.)/\n/( : ) \n (\" \") "));
+	CHECK(nospaces(snowman(41123212)) == nospaces(" ___ \n (_*_) \n (.,o)/\n/( : ) \n (\" \") "));
+	CHECK(nospaces(snowman(41133212)) == nospaces(" ___ \n (_*_) \n (.,O)/\n/( : ) \n (\" \") "));
+	CHECK(nospaces(snowman(41143212)) == nospaces(" ___ \n (_*_) \n (.,-)/\n/( : ) \n (\" \") "));
 
 	// Left Arm
 	CHECK(nospaces(snowman(24231214)) == nospaces(" ___ \n ..... \n (o O)/\n<( : ) \n (   ) "));
